@@ -1,5 +1,7 @@
 const nsfw = require('nsfwjs');
 const axios = require('axios');
+const FormData = require('form-data');
+const fs = require('fs');
 const helpers = require('./helpers');
 
 require('dotenv').config();
@@ -49,10 +51,27 @@ const extensiveImageModeration = async (imageLink, imageModerationModels) => {
   }
 };
 
+const extensiveImageModeration2 = async (imageName, imageModerationModels) => {
+  const data = new FormData();
+  data.append('media', fs.createReadStream(`./${imageName}`));
+  data.append('models', imageModerationModels);
+  data.append('api_user', process.env.SIGHT_ENGINE_API_USER);
+  data.append('api_secret', process.env.SIGHT_ENGINE_API_SECRET);
+
+  const res = await axios({
+    method: 'post',
+    url: 'https://api.sightengine.com/1.0/check.json',
+    data,
+    headers: data.getHeaders(),
+  });
+  return helpers.imageModerationConversion(res.data, imageModerationModels);
+};
+
 const imageModeration = {
   load_model,
   nsfwDetection,
   extensiveImageModeration,
+  extensiveImageModeration2,
 };
 
 module.exports = imageModeration;

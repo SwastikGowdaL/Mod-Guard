@@ -1,9 +1,9 @@
 const weaponProbability = (probability) => {
   const convertedProbability = probability * 100;
   if (convertedProbability > 20) {
-    return 'true';
+    return true;
   }
-  return 'false';
+  return false;
 };
 
 module.exports = weaponProbability;
