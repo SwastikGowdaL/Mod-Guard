@@ -68,26 +68,35 @@ const modGuardServices = async (moderationData, imageBuffer) => {
     });
   }
 
+  //* checking whether the user provided isProfane field
   if (Object.hasOwn(moderationData, 'isProfane')) {
     response.isProfane = await profanityDetection.isProfane(
       moderationData.isProfane
     );
   }
+
+  //* checking whether the user provided text to filter profanity
   if (Object.hasOwn(moderationData, 'filter_profanity')) {
     response.filtered_profanity = await profanityDetection.filterProfanity(
       moderationData.filter_profanity
     );
   }
+
+  //* checking whether the user provided malicious link
   if (Object.hasOwn(moderationData, 'isMalicious')) {
     response.isMalicious = await maliciousUrlDetection(
       moderationData.isMalicious
     );
   }
+
+  //* checking whether the user provided content for spamDetection
   if (Object.hasOwn(moderationData, 'isSpam')) {
     response.isSpam = await spamDetection.spamContentDetection(
       moderationData.isSpam
     );
   }
+
+  //* checking whether the user provided content for spamEmailDetection
   if (Object.hasOwn(moderationData, 'isSpamEmail')) {
     response.isSpamEmail = await spamDetection.spamEmailDetection(
       moderationData.isSpamEmail
