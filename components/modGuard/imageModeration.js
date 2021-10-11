@@ -25,7 +25,10 @@ const nsfwDetection = async (imageBuffer) => {
     }
     return false;
   } catch (err) {
-    console.log(err);
+    console.log(
+      '🚀 ~ file: imageModeration.js ~ line 32 ~ nsfwDetection ~ err',
+      err
+    );
   }
 };
 

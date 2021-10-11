@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "connectCon":"nodemon ./components/modGuard/consumers/modGuardConsumer.js",
+    "all":"npm-run-all --parallel dev connectCon"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,7 @@
   "dependencies": {
     "@tensorflow/tfjs-node": "^3.9.0",
     "akismet-api": "^5.2.1",
+    "amqplib": "^0.8.0",
     "axios": "^0.22.0",
     "bad-words": "^3.0.4",
     "dotenv": "^10.0.0",
@@ -44,6 +47,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "typescript": "^4.4.2"
   }
