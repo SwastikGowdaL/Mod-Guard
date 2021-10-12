@@ -3,16 +3,25 @@ const imgDecode = require('./imgDecode');
 
 //* converting the image to the format that can be understood by the nsfw library
 const convert = async (imgBuffer) => {
-  const image = await imgDecode(imgBuffer);
-  const numChannels = 3;
-  const numPixels = image.width * image.height;
-  const values = new Int32Array(numPixels * numChannels);
+  try {
+    const image = await imgDecode(imgBuffer);
+    const numChannels = 3;
+    const numPixels = image.width * image.height;
+    const values = new Int32Array(numPixels * numChannels);
 
-  for (let i = 0; i < numPixels; i++)
-    for (let c = 0; c < numChannels; ++c)
-      values[i * numChannels + c] = image.data[i * 4 + c];
+    for (let i = 0; i < numPixels; i++)
+      for (let c = 0; c < numChannels; ++c)
+        values[i * numChannels + c] = image.data[i * 4 + c];
 
-  return tf.tensor3d(values, [image.height, image.width, numChannels], 'int32');
+    return tf.tensor3d(
+      values,
+      [image.height, image.width, numChannels],
+      'int32'
+    );
+  } catch (err) {
+    console.log('error in convert');
+    console.log(err);
+  }
 };
 
 module.exports = convert;

@@ -38,10 +38,7 @@ const modGuardServices = async (moderationData, imageBuffer) => {
 
   //* checks whether the link of the image was provided & whether selected other image_moderation details than nudity &
   //* sends it to sight engine api service along with the image_moderation details
-  if (
-    Object.hasOwn(moderationData, 'image_link') &&
-    moderationData.image_moderation !== 'nudity'
-  ) {
+  if (Object.hasOwn(moderationData, 'image_link')) {
     response = await imageModeration.extensiveImageModeration(
       moderationData.image_link,
       moderationData.image_moderation
@@ -50,23 +47,24 @@ const modGuardServices = async (moderationData, imageBuffer) => {
 
   //*  checks whether the image link was provided and whether only the nudity was provided in image_moderation details
   //* if so then downloads the file from that link and then sends it to nsfwjs module for nsfw detection
-  if (
-    Object.hasOwn(moderationData, 'image_link') &&
-    moderationData.image_moderation === 'nudity'
-  ) {
-    const filename = `${uid()}.jpg`;
-    fs.writeFileSync(filename, await download(moderationData.image_link));
-    const imageModerationResponse = await imageModeration.nsfwDetection(
-      `./${filename}`
-    );
-    response.isNSFW = imageModerationResponse;
-    fs.unlink(filename, (err1) => {
-      if (err1) {
-        console.log(err1);
-      }
-      console.log(`successfully deleted ${filename}`);
-    });
-  }
+  // if (
+  //   Object.hasOwn(moderationData, 'image_link') &&
+  //   moderationData.image_moderation === 'nudity'
+  // ) {
+  //   const filename = `${uid()}.jpg`;
+  //   fs.writeFileSync(filename, await download(moderationData.image_link));
+  //   const imageModerationResponse = await imageModeration.nsfwDetection(
+  //     `./${filename}`
+  //   );
+  //   console.log(imageModerationResponse);
+  //   response.isNSFW = imageModerationResponse;
+  //   fs.unlink(filename, (err1) => {
+  //     if (err1) {
+  //       console.log(err1);
+  //     }
+  //     console.log(`successfully deleted ${filename}`);
+  //   });
+  // }
 
   //* checking whether the user provided isProfane field
   if (Object.hasOwn(moderationData, 'isProfane')) {
