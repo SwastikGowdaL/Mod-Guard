@@ -64,6 +64,7 @@ const moderationDataConsumer = async () => {
         if (Object.hasOwn(moderationData, 'metadata')) {
           response.metadata = moderationData.metadata;
         }
+        console.log('consumer 1 response -');
         console.log(response);
 
         //*  your code goes here
