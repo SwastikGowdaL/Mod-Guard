@@ -21,6 +21,7 @@ const moderationDataPublisher = async (moderationData) => {
       'ModGuard',
       Buffer.from(JSON.stringify(moderationData))
     );
+    console.log('published to ModGuard queue');
   } catch (err) {
     console.log(err);
   }

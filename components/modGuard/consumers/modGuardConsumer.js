@@ -61,7 +61,14 @@ const moderationDataConsumer = async () => {
         } else {
           response = await modGuardServices(moderationData, undefined);
         }
+        if (Object.hasOwn(moderationData, 'metadata')) {
+          response.metadata = moderationData.metadata;
+        }
         console.log(response);
+
+        //*  your code goes here
+        //* the result of the moderation data is available in response variable
+
         channel.ack(message);
       } catch (err) {
         console.log(err);

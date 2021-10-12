@@ -17,6 +17,7 @@ const schema = Joi.object({
     name: Joi.string(),
   },
   isSpamEmail: Joi.string().email(),
+  metadata: Joi.any(),
 });
 
 module.exports = schema;
