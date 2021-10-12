@@ -41,7 +41,8 @@ There are various **strategies** for communicating with our tool -
 1.  Api Strategy (Rest API's)
 2.  API + Publisher/Consumer Strategy
 3.  Publisher/Consumer Strategy (Asynchronous messaging/Message Broker)
-    > Choose the appropriate strategy based on your use-case.
+    
+> Choose the appropriate strategy based on your use-case.
 
 ### 1. Api Strategy
 
