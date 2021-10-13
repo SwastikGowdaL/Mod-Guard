@@ -52,8 +52,8 @@ As i told you guys before I am using various free, open source and freemium serv
 
 - For any imagery detection, I am using [sightengine](https://sightengine.com/) api service , go to their website & [sign up](https://dashboard.sightengine.com/signup) to their free service , then they will provide you with an [api user key](https://dashboard.sightengine.com/api-credentials) and [api secret key](https://dashboard.sightengine.com/api-credentials) , specify those keys in the `.env` file like this -
 
-  <code>SIGHT_ENGINE_API_USER=*your-api-user-key*  </br>
-  <code>SIGHT_ENGINE_API_SECRET=*your-api-secret* </br>
+  <code>SIGHT_ENGINE_API_USER=*your-api-user-key*  </code></br>
+  <code>SIGHT_ENGINE_API_SECRET=*your-api-secret* </code></br>
   <code>BLOG=*your-blog-website-url* </code>
 
   > Its an awesome service , but the api requests that can be made is limited for free service , so if you want to do a lot of imagery detection, I recommend you buy a paid plan.
