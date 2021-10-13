@@ -40,39 +40,39 @@ As i told you guys before I am using various free, open source and freemium serv
 
 - In the `.env` file specify the port you want to use -
 
-  <code> PORT=_your-desired-port_ </code>
+  <code> PORT=*your-desired-port* </code>
 
   > If not specified, it will use port 3001 by default
 
 - In the `.env` file specify the authentication key that you want to use and make sure that you provide that auth key in the header of each and every request from the client, provide the auth key like this in the `.env` -
 
-  <code>AUTH*KEY=\_your-auth-key*</code>
+  <code>AUTH_KEY=*your-auth-key*</code>
 
   > This is integrated for security purposes, and I have also implemented rate limiter for basic protection against attacks like DDoS and brute force , we have used the [express-slow-down](https://www.npmjs.com/package/express-slow-down) module for this , which is based on the token bucket slow down algorithm, that means if more that 10 requests are sent in 1 min from the same IP address, then our rate limiter is gonna make the subsequent request wait for 500 ms and this is implemented only on API strategy api endpoint and no rate limiter imposed on API + publisher/consumer strategy api endpoint. You can change the 10 request limit in the rateLimiter.js file in the middleware folder of this project.
 
 - For any imagery detection, I am using [sightengine](https://sightengine.com/) api service , go to their website & [sign up](https://dashboard.sightengine.com/signup) to their free service , then they will provide you with an [api user key](https://dashboard.sightengine.com/api-credentials) and [api secret key](https://dashboard.sightengine.com/api-credentials) , specify those keys in the `.env` file like this -
 
-  <code>SIGHT*ENGINE_API_USER=\_your-api-user-key*
-  SIGHT*ENGINE_API_SECRET=\_your-api-secret*
-  BLOG=_your-blog-website-url_ </code>
+  <code>SIGHT_ENGINE_API_USER=*your-api-user-key*  </code></br>
+  <code>SIGHT_ENGINE_API_SECRET=*your-api-secret* </code></br>
+  <code>BLOG=*your-blog-website-url* </code>
 
   > Its an awesome service , but the api requests that can be made is limited for free service , so if you want to do a lot of imagery detection, I recommend you buy a paid plan.
 
 - For Malicious URL detection and spam email detection , I am using the ipqualityscore service , they also provide you with generous free tier with some limitations , go to their [website](https://www.ipqualityscore.com/create-account) and [sign up](https://www.ipqualityscore.com/create-account) to their service , and then they will provide you with an [api key](https://www.ipqualityscore.com/documentation/malicious-url-scanner-api/overview#:~:text=Parked%20Domain%20Detection%20API,Private%20Key), specify it, inside the `.env` file like this -
 
-  <code>MALICIOUS*URL_SCANNER_KEY=\_your-api-key*</code>
+  <code>MALICIOUS_URL_SCANNER_KEY=*your-api-key*</code>
 
   > Its is also an awesome service , but the api requests that can be made is limited for free service , so if you want to do a lot of malicious URL detection, I recommend you buy a paid plan.
 
 - For spam content detection , I am using Akismet api service , they also provide you with generous free tier with some limitations , go to their website and [sign up](https://akismet.com/signup/#personal) for the service , after that they will email you the api key , specify it , inside the `.env` file like this -
 
-  <code>AKISMET*KEY=\_your-api-key*</code>
+  <code>AKISMET_KEY=*your-api-key*</code>
 
   > It is also a good service , but the limitation is that you can use it for free only on personnal projects , if you want to use it for commercial projects , you have to buy the paid plan.
 
 - For publisher/consumer strategy and API+publisher/consumer strategy, I am using the RabbitMQ message broker , and that message broker is should be hosted and maintained by a cloud provider called CloudAMQP , go to their [website](https://customer.cloudamqp.com/login) create an account and choose their free tier and create an instance , for more details on creating an instance go through this [video](https://youtu.be/e03c3CIGtYU?t=5303) , once you create an instance, you will get the link to that cloud instance/server , specify it in the `.env` file like this -
 
-  <code> RABBITMQ*SERVER=\_your-rabbiMQ-instance-link*</code>
+  <code> RABBITMQ_SERVER=*your-rabbiMQ-instance-link*</code>
 
   > This is not necessary if you are going to use only the API strategy, since it doesn't require a message broker.
 
@@ -85,7 +85,8 @@ If you have followed along the steps properly, your `.env` file should look some
 1.  Api Strategy (Rest API's)
 2.  API + Publisher/Consumer Strategy
 3.  Publisher/Consumer Strategy (Asynchronous messaging/Message Broker)
-    > Choose the appropriate strategy based on your use-case.
+
+> Choose the appropriate strategy based on your use-case.
 
 ### 1. Api Strategy
 
