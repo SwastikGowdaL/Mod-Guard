@@ -141,6 +141,6 @@ To use this strategy properly , navigate to root folder of my project and then i
 
 <a href="https://ibb.co/7bDBP4y"><img src="https://i.ibb.co/6NSGzBs/2021-10-13-13-07.png" alt="modGuardConsumer" border="0"></a>
 
-> This strategy can be used by only those who know to work with js/node js, since you will have to write your javascript code to access the response of moderation data and do what ever you want with it.
+> This strategy can be used by only those who know to work with js/node js, since you will have to write your own javascript code to access the response of moderation data and do what ever you want with it.
 
 > You can also write few lines of js to send the response of moderation data from consumer back to your server, which might be written in different prgramming language.
