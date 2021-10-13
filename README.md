@@ -46,15 +46,15 @@ As i told you guys before I am using various free, open source and freemium serv
 
 - In the `.env` file specify the authentication key that you want to use and make sure that you provide that auth key in the header of each and every request from the client, provide the auth key like this in the `.env` -
 
-  <code>AUTH*KEY=\_your-auth-key*</code>
+  <code>AUTH_KEY=*your-auth-key*</code>
 
   > This is integrated for security purposes, and I have also implemented rate limiter for basic protection against attacks like DDoS and brute force , we have used the [express-slow-down](https://www.npmjs.com/package/express-slow-down) module for this , which is based on the token bucket slow down algorithm, that means if more that 10 requests are sent in 1 min from the same IP address, then our rate limiter is gonna make the subsequent request wait for 500 ms and this is implemented only on API strategy api endpoint and no rate limiter imposed on API + publisher/consumer strategy api endpoint. You can change the 10 request limit in the rateLimiter.js file in the middleware folder of this project.
 
 - For any imagery detection, I am using [sightengine](https://sightengine.com/) api service , go to their website & [sign up](https://dashboard.sightengine.com/signup) to their free service , then they will provide you with an [api user key](https://dashboard.sightengine.com/api-credentials) and [api secret key](https://dashboard.sightengine.com/api-credentials) , specify those keys in the `.env` file like this -
 
-  <code>SIGHT*ENGINE_API_USER=\_your-api-user-key*
-  SIGHT*ENGINE_API_SECRET=\_your-api-secret*
-  BLOG=_your-blog-website-url_ </code>
+  <code>SIGHT_ENGINE_API_USER=*your-api-user-key*
+  SIGHT_ENGINE_API_SECRET=*your-api-secret*
+  BLOG=*your-blog-website-url* </code>
 
   > Its an awesome service , but the api requests that can be made is limited for free service , so if you want to do a lot of imagery detection, I recommend you buy a paid plan.
 
