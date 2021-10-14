@@ -40,39 +40,39 @@ As i told you guys before I am using various free, open source and freemium serv
 
 - In the `.env` file specify the port you want to use -
 
-  <code> PORT=*your-desired-port* </code>
+  <code> PORT=_your-desired-port_ </code>
 
   > If not specified, it will use port 3001 by default
 
 - In the `.env` file specify the authentication key that you want to use and make sure that you provide that auth key in the header of each and every request from the client, provide the auth key like this in the `.env` -
 
-  <code>AUTH_KEY=*your-auth-key*</code>
+  <code>AUTH*KEY=\_your-auth-key*</code>
 
   > This is integrated for security purposes, and I have also implemented rate limiter for basic protection against attacks like DDoS and brute force , we have used the [express-slow-down](https://www.npmjs.com/package/express-slow-down) module for this , which is based on the token bucket slow down algorithm, that means if more that 10 requests are sent in 1 min from the same IP address, then our rate limiter is gonna make the subsequent request wait for 500 ms and this is implemented only on API strategy api endpoint and no rate limiter imposed on API + publisher/consumer strategy api endpoint. You can change the 10 request limit in the rateLimiter.js file in the middleware folder of this project.
 
 - For any imagery detection, I am using [sightengine](https://sightengine.com/) api service , go to their website & [sign up](https://dashboard.sightengine.com/signup) to their free service , then they will provide you with an [api user key](https://dashboard.sightengine.com/api-credentials) and [api secret key](https://dashboard.sightengine.com/api-credentials) , specify those keys in the `.env` file like this -
 
-  <code>SIGHT_ENGINE_API_USER=*your-api-user-key*  </code></br>
-  <code>SIGHT_ENGINE_API_SECRET=*your-api-secret* </code></br>
-  <code>BLOG=*your-blog-website-url* </code>
+  <code>SIGHT*ENGINE_API_USER=\_your-api-user-key* </code></br>
+  <code>SIGHT*ENGINE_API_SECRET=\_your-api-secret* </code></br>
+  <code>BLOG=_your-blog-website-url_ </code>
 
   > Its an awesome service , but the api requests that can be made is limited for free service , so if you want to do a lot of imagery detection, I recommend you buy a paid plan.
 
 - For Malicious URL detection and spam email detection , I am using the ipqualityscore service , they also provide you with generous free tier with some limitations , go to their [website](https://www.ipqualityscore.com/create-account) and [sign up](https://www.ipqualityscore.com/create-account) to their service , and then they will provide you with an [api key](https://www.ipqualityscore.com/documentation/malicious-url-scanner-api/overview#:~:text=Parked%20Domain%20Detection%20API,Private%20Key), specify it, inside the `.env` file like this -
 
-  <code>MALICIOUS_URL_SCANNER_KEY=*your-api-key*</code>
+  <code>MALICIOUS*URL_SCANNER_KEY=\_your-api-key*</code>
 
   > Its is also an awesome service , but the api requests that can be made is limited for free service , so if you want to do a lot of malicious URL detection, I recommend you buy a paid plan.
 
 - For spam content detection , I am using Akismet api service , they also provide you with generous free tier with some limitations , go to their website and [sign up](https://akismet.com/signup/#personal) for the service , after that they will email you the api key , specify it , inside the `.env` file like this -
 
-  <code>AKISMET_KEY=*your-api-key*</code>
+  <code>AKISMET*KEY=\_your-api-key*</code>
 
-  > It is also a good service , but the limitation is that you can use it for free only on personnal projects , if you want to use it for commercial projects , you have to buy the paid plan.
+  > It is also a good service , but the limitation is that you can use it for free only on personnel projects , if you want to use it for commercial projects , you have to buy the paid plan.
 
 - For publisher/consumer strategy and API+publisher/consumer strategy, I am using the RabbitMQ message broker , and that message broker is should be hosted and maintained by a cloud provider called CloudAMQP , go to their [website](https://customer.cloudamqp.com/login) create an account and choose their free tier and create an instance , for more details on creating an instance go through this [video](https://youtu.be/e03c3CIGtYU?t=5303) , once you create an instance, you will get the link to that cloud instance/server , specify it in the `.env` file like this -
 
-  <code> RABBITMQ_SERVER=*your-rabbiMQ-instance-link*</code>
+  <code> RABBITMQ*SERVER=\_your-rabbiMQ-instance-link*</code>
 
   > This is not necessary if you are going to use only the API strategy, since it doesn't require a message broker.
 
@@ -141,6 +141,35 @@ To use this strategy properly , navigate to root folder of my project and then i
 
 <a href="https://ibb.co/7bDBP4y"><img src="https://i.ibb.co/6NSGzBs/2021-10-13-13-07.png" alt="modGuardConsumer" border="0"></a>
 
-> This strategy can be used by only those who know to work with js/node js, since you will have to write your javascript code to access the response of moderation data and do what ever you want with it.
+**Pros/Cons of using API + Publisher/Consumer strategy -**
 
-> You can also write few lines of js to send the response of moderation data from consumer back to your server, which might be written in different prgramming language.
+1. This strategy can be used by only those who know to work with js/node js, since you will have to write your javascript code to access the response of moderation data and do what ever you want with it.
+2. You can also write few lines of js to send the response of moderation data from consumer back to your server, and the server might be written in different prgramming language.
+3. Since the data is enqueued in the message queue and that message queue is made persistent, there is no data loss, hence reliable!
+4. Programmer doesn't have to learn about the message broker.
+
+### 3. Publisher/Consumer Strategy -
+
+<a href="#"><img src="https://i.ibb.co/ZGGqN42/Pub-Con.jpg" alt="Pub-Con" border="0"></a>
+
+In this strategy , the publisher will be integrated to your existing application , and that publisher will have the connection setup to the message queue which will be hosted in cloudAMQP, and this Mod-Guard tool will be hosted in any cloud hosting platforms (eg-heroku) and will act as only the consumer, which will dequeue the data that is being enqueued in the message queue and that data will be processed and the result of the moderation data will be available at the consumer end , just like the API+Publisher/Consumer strategy, you will write your own js code in the modGuardConsumer.js file to access the response of the moderation data, and do whatever you want with it.
+
+<a href="https://ibb.co/7bDBP4y"><img src="https://i.ibb.co/6NSGzBs/2021-10-13-13-07.png" alt="modGuardConsumer" border="0"></a>
+
+If you are using javascript/node.js, then you can use the modGuardPublisher.js file available in the publishers folder, which is inside the components folder and which is inside the root folder of the repo,
+`Mod-Guard/components/modGuard/publishers/modGuardPublisher.js`  
+You can just take this file and put it inside your code base and import it in your code and call the moderationDataPublisher() function and pass the moderation data as an argument to it , and that moderation data will be enqueued in the message queue and result of that moderation data will be available at the consumer end. But if you are using this publisher file in your code base, make sure that you install [amqplib](https://www.npmjs.com/package/amqplib) and [dotenv](https://www.npmjs.com/package/dotenv) packages.
+
+<a href="https://ibb.co/j6wbSCp"><img src="https://i.ibb.co/Bz6c9h1/2021-10-14-11-27.png" alt="2021-10-14-11-27" border="0"></a>
+
+If you are not using js, then go through this [website](https://www.rabbitmq.com/getstarted.html#:~:text=1%20%22Hello%20World,that%20does%20something) to implement publisher in your programming language and using that enqueue the moderation data in the "ModGuard" message queue.
+
+**Moderation data structure -**
+Moderation data structure/format should be same as the request format in API strategy.
+Here instead of performing API request, you just pass the moderation data which is of type object as an argument to the moderationDataPublisher() function.
+
+**Pros/Cons of using Publisher/Consumer strategy -**
+
+1. Need to know about message brokers and just the basics of RabbitMQ.
+2. This strategy is Highly recommended since there is not a lot of latency involved.
+3. This strategy and the 2nd strategy are reliable due to persistent message queue, hence there will be no data loss.
