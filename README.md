@@ -148,7 +148,7 @@ To use this strategy properly , navigate to root folder of my project and then i
 3. Since the data is enqueued in the message queue and that message queue is made persistent, there is no data loss, hence reliable!
 4. Programmer doesn't have to learn about the message broker.
 
-### 3. Publisher/Consumer Strategy -
+### 3. Publisher/Consumer Strategy
 
 <a href="#"><img src="https://i.ibb.co/ZGGqN42/Pub-Con.jpg" alt="Pub-Con" border="0"></a>
 
