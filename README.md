@@ -178,3 +178,11 @@ Here instead of performing API request, you just pass the moderation data which 
 ## Contributing
 
 Please read through our [contributing guidelines](https://github.com/SwastikGowdaL/Mod-Guard/blob/main/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+
+## Creator 
+
+**Swastik Gowda**
+- https://www.instagram.com/coder_rna/
+- https://www.linkedin.com/in/swastik-gowda-l-06972a18a/
+- https://swastikgowdal.github.io/SwastikGowda-Portfolio/
+- https://twitter.com/swastikgowda
