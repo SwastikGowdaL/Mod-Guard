@@ -198,6 +198,7 @@ Thanks to these awesome services/tools and technologies!
 - [Cloudamqp](https://customer.cloudamqp.com/)
 - [akismet](https://akismet.com/)
 - [bad-words NPM package](https://www.npmjs.com/package/bad-words)
+- [NSFWjs](https://www.npmjs.com/package/nsfwjs)
 
 ## Copyright and license
 
