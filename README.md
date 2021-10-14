@@ -92,6 +92,8 @@ If you have followed along the steps properly, your `.env` file should look some
 
 Using this strategy is just like communicating with any other Rest api's out there!
 
+<a href="#"><img src="https://i.ibb.co/q0CLTrZ/API-strategy-drawio.png" alt="API-strategy-drawio" border="0"></a>
+
 #### Request structure (multipart/form-data) -
 
 > **NOTE**: Remember requests must be of multipart/form-data
@@ -122,7 +124,9 @@ Using this strategy is just like communicating with any other Rest api's out the
 
 ### 2. Api + Publisher / Consumer Strategy
 
-This strategy is provided for those who don't want wait for the moderation response immediately and also don't want to learn to use or integrate message broker to their existing application, using this strategy , you send a rest api request along with the data to this tool and this tool will enqueue those data in the message queue and will immediately send the response back to you saying that the message data has been enqueued and that data will be processed later and the response will be available at the consumer end , there you can do whatever you want with the response.
+<a href="#"><img src="https://i.ibb.co/KWMs2CP/api-pubcon.jpg" alt="api-pubcon" border="0"></a>
+
+This strategy is provided for those who don't want to wait for the moderation response immediately and also don't want to learn to use or integrate message broker to their existing application, using this strategy , you send a rest api request along with the data to this tool and this tool will enqueue those data in the message queue and will immediately send the response back to you saying that the message data has been enqueued and that data will be processed later and the response will be available at the consumer end , there you can do whatever you want with the response.
 
 > Eg - Let's say you have an application like instagram, where the user posts an image, text etc.., you can send those to mod-guard for moderation , but the moderation will take too long if you have chosen the api strategy , but you have to give the user a response immediately whether the post has been posted or not , so at that time you can use this API+Publisher/consumer strategy wherein you send those data using rest api's but that data will not be processed immediately , they will be enqueued in the message queue for it to be processed later, after enqueuing the data (enqueuing of data will only take around 20-30 ms) successful, enqueued response will be sent to you and by this you can say to user that the post has been successfully posted , now the consumers will dequeue that data and will process and do moderation on that data and the response will be available , so you can do whatever you want with the response, like for eg you can delete the post if it contains an nsfw image and send a notification to the user as well or you can successfully save it in your database etc..,
 
