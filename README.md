@@ -196,3 +196,7 @@ Thanks to these awesome services/tools and technologies!
 - [Cloudamqp](https://customer.cloudamqp.com/)
 - [akismet](https://akismet.com/)
 - [bad-words NPM package](https://www.npmjs.com/package/bad-words)
+
+## Copyright and license
+
+Code and documentation copyright 2021 [Swastik Gowda](https://swastikgowdal.github.io/SwastikGowda-Portfolio/). Code released under the [MIT License](https://github.com/SwastikGowdaL/Mod-Guard/blob/main/LICENSE). 
