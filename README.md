@@ -17,8 +17,10 @@
 **Step 1:**
 ```Fork``` and then ```clone``` the forked repo!
 
+![fork-clone](https://user-images.githubusercontent.com/68393994/137305485-f0c147ec-6083-4e08-9ca4-8dea1b61cb8a.gif)
+
 **Step 2:**
-Inside the repo, run this command in the git bash terminal, to install all the dependencies -
+Navigate inside the cloned repo, and from there open the terminal and run the following command, to install all the dependencies -
 
 ```
 npm install
@@ -26,7 +28,7 @@ npm install
 
 **Step 3:**
 Create `.env` file in the root directory of the cloned repo, like this - `Mod-Guard/.env`
-Mod-Guard is the cloned repo, and you should create `.env` file inside that
+Mod-Guard is the cloned repo, and you should create `.env` file inside that!
 
 <a href="https://g.co/kgs/HVA7Mb"><img src="https://i.ibb.co/PcTst0F/modg.png" alt="mod guard" border="0"></a>
 
@@ -148,7 +150,7 @@ To use this strategy properly , navigate to root folder of my project and then i
 3. Since the data is enqueued in the message queue and that message queue is made persistent, there is no data loss, hence reliable!
 4. Programmer doesn't have to learn about the message broker.
 
-### 3. Publisher/Consumer Strategy -
+### 3. Publisher/Consumer Strategy
 
 <a href="#"><img src="https://i.ibb.co/ZGGqN42/Pub-Con.jpg" alt="Pub-Con" border="0"></a>
 
@@ -186,3 +188,18 @@ Please read through our [contributing guidelines](https://github.com/SwastikGowd
 - https://www.linkedin.com/in/swastik-gowda-l-06972a18a/
 - https://swastikgowdal.github.io/SwastikGowda-Portfolio/
 - https://twitter.com/swastikgowda
+
+## Acknowledgments 👍
+
+Thanks to these awesome services/tools and technologies!
+- [Sightengine](https://sightengine.com/)
+- [ipqualityscore.com](https://www.ipqualityscore.com/)
+- [RabbitMQ](https://rabbitmq.com/)
+- [Cloudamqp](https://customer.cloudamqp.com/)
+- [akismet](https://akismet.com/)
+- [bad-words NPM package](https://www.npmjs.com/package/bad-words)
+- [NSFWjs](https://www.npmjs.com/package/nsfwjs)
+
+## Copyright and license
+
+Code and documentation copyright 2021 [Swastik Gowda](https://swastikgowdal.github.io/SwastikGowda-Portfolio/). Code released under the [MIT License](https://github.com/SwastikGowdaL/Mod-Guard/blob/main/LICENSE). 
