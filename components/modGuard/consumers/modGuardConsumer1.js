@@ -84,4 +84,6 @@ const startConsumer = async () => {
   await moderationDataConsumer();
 };
 
-startConsumer();
+module.exports = {
+  startConsumer,
+};

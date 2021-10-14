@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "connectCon1":"nodemon ./components/modGuard/consumers/modGuardConsumer1.js",
-    "connectCon2":"nodemon ./components/modGuard/consumers/modGuardConsumer2.js",
-    "start":"npm-run-all --parallel dev connectCon1 connectCon2"
+    "connectCon1": "nodemon ./components/modGuard/consumers/modGuardConsumer1.js",
+    "connectCon2": "nodemon ./components/modGuard/consumers/modGuardConsumer2.js",
+    "start": "nodemon index.js"
   },
   "engines": {
     "node": "16.9.1",
-    "npm":"7.21.1"
+    "npm": "7.21.1"
   },
   "keywords": [],
   "author": "",
