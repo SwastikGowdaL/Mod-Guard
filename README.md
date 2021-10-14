@@ -20,7 +20,7 @@
 ![fork-clone](https://user-images.githubusercontent.com/68393994/137305485-f0c147ec-6083-4e08-9ca4-8dea1b61cb8a.gif)
 
 **Step 2:**
-Inside the repo, run this command in the git bash terminal, to install all the dependencies -
+Navigate inside the cloned repo, and from there open the terminal and run the following command, to install all the dependencies -
 
 ```
 npm install
@@ -28,7 +28,7 @@ npm install
 
 **Step 3:**
 Create `.env` file in the root directory of the cloned repo, like this - `Mod-Guard/.env`
-Mod-Guard is the cloned repo, and you should create `.env` file inside that
+Mod-Guard is the cloned repo, and you should create `.env` file inside that!
 
 <a href="https://g.co/kgs/HVA7Mb"><img src="https://i.ibb.co/PcTst0F/modg.png" alt="mod guard" border="0"></a>
 
