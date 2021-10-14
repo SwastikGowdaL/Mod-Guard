@@ -30,7 +30,7 @@ Mod-Guard is the cloned repo, and you should create `.env` file inside that
 
 <a href="https://g.co/kgs/HVA7Mb"><img src="https://i.ibb.co/PcTst0F/modg.png" alt="mod guard" border="0"></a>
 
-## Getting Started
+## Getting Started / Usage
 
 As i told you guys before I am using various free, open source and freemium service , so this tool need to connect to those services to funciton, and these services provide you with the free api key to use their service with some limitations, you need to specify those api keys in the .env file , and the application will make use of that .
 
