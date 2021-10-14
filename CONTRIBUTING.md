@@ -20,3 +20,7 @@ provide as much detail and context as possible.
 ## Code guidelines
 
 Adhere to the [Eslint](https://eslint.org/docs/user-guide/getting-started) and [Airbnb](https://github.com/airbnb/javascript) code guidelines!
+
+## License
+
+By contributing your code, you agree to license your contribution under the [MIT License](../LICENSE).
