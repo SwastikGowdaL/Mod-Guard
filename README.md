@@ -92,6 +92,8 @@ If you have followed along the steps properly, your `.env` file should look some
 
 Using this strategy is just like communicating with any other Rest api's out there!
 
+<a href="#"><img src="https://i.ibb.co/q0CLTrZ/API-strategy-drawio.png" alt="API-strategy-drawio" border="0"></a>
+
 #### Request structure (multipart/form-data) -
 
 > **NOTE**: Remember requests must be of multipart/form-data
