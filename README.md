@@ -173,3 +173,8 @@ Here instead of performing API request, you just pass the moderation data which 
 1. Need to know about message brokers and just the basics of RabbitMQ.
 2. This strategy is Highly recommended since there is not a lot of latency involved.
 3. This strategy and the 2nd strategy are reliable due to persistent message queue, hence there will be no data loss.
+
+
+## Contributing
+
+Please read through our [contributing guidelines](https://github.com/SwastikGowdaL/Mod-Guard/blob/main/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
