@@ -15,11 +15,7 @@
 > **Prerequisites** : Node.js, npm and git bash installed in your computer/laptop.
 
 **Step 1:**
-Run this command in your git bash terminal -
-
-```
-git clone https://github.com/SwastikGowdaL/Mod-Guard.git
-```
+```Fork``` and then ```clone``` the forked repo!
 
 **Step 2:**
 Inside the repo, run this command in the git bash terminal, to install all the dependencies -
