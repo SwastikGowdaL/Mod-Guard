@@ -17,6 +17,8 @@
 **Step 1:**
 ```Fork``` and then ```clone``` the forked repo!
 
+![fork-clone](https://user-images.githubusercontent.com/68393994/137305485-f0c147ec-6083-4e08-9ca4-8dea1b61cb8a.gif)
+
 **Step 2:**
 Inside the repo, run this command in the git bash terminal, to install all the dependencies -
 
