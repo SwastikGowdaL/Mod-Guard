@@ -46,7 +46,7 @@ As i told you guys before I am using various free, open source and freemium serv
 
 - In the `.env` file specify the authentication key that you want to use and make sure that you provide that auth key in the header of each and every request from the client, provide the auth key like this in the `.env` -
 
-  <code>AUTH*KEY=\_your-auth-key*</code>
+  <code>AUTH_KEY=*your-auth-key*</code>
 
   > This is integrated for security purposes, and I have also implemented rate limiter for basic protection against attacks like DDoS and brute force , we have used the [express-slow-down](https://www.npmjs.com/package/express-slow-down) module for this , which is based on the token bucket slow down algorithm, that means if more that 10 requests are sent in 1 min from the same IP address, then our rate limiter is gonna make the subsequent request wait for 500 ms and this is implemented only on API strategy api endpoint and no rate limiter imposed on API + publisher/consumer strategy api endpoint. You can change the 10 request limit in the rateLimiter.js file in the middleware folder of this project.
 
