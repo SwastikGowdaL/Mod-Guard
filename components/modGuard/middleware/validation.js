@@ -9,6 +9,7 @@ const validator = async (req, res, next) => {
       );
     }
     if (!req.file && !req.body.image_link && req.body.image_moderation) {
+      console.log(req.file);
       throw new Error(
         'please provide either image_link or image_file, for moderation of image'
       );

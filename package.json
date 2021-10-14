@@ -9,6 +9,10 @@
     "connectCon2":"nodemon ./components/modGuard/consumers/modGuardConsumer2.js",
     "start":"npm-run-all --parallel dev connectCon1 connectCon2"
   },
+  "engines": {
+    "node": "16.9.1",
+    "npm":"7.21.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
