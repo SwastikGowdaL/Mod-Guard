@@ -78,7 +78,7 @@ As i told you guys before I am using various free, open source and freemium serv
 
 If you have followed along the steps properly, your `.env` file should look something like this -
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/BqGk241/2021-10-13-09-04.png" alt="mod guard .env" border="0"></a>
+<a href="#"><img src="https://i.ibb.co/BqGk241/2021-10-13-09-04.png" alt="mod guard .env" border="0"></a>
 
 **There are various strategies for communicating with our tool -**
 
@@ -92,7 +92,7 @@ If you have followed along the steps properly, your `.env` file should look some
 
 Using this strategy is just like communicating with any other Rest api's out there!
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/q0CLTrZ/API-strategy-drawio.png" alt="API-strategy-drawio" border="0"></a>
+<a href="#"><img src="https://i.ibb.co/q0CLTrZ/API-strategy-drawio.png" alt="API-strategy-drawio" border="0"></a>
 
 #### Request structure (multipart/form-data) -
 
@@ -124,7 +124,7 @@ Using this strategy is just like communicating with any other Rest api's out the
 
 ### 2. Api + Publisher / Consumer Strategy
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/KWMs2CP/api-pubcon.jpg" alt="api-pubcon" border="0"></a>
+<a href="#"><img src="https://i.ibb.co/KWMs2CP/api-pubcon.jpg" alt="api-pubcon" border="0"></a>
 
 This strategy is provided for those who don't want to wait for the moderation response immediately and also don't want to learn to use or integrate message broker to their existing application, using this strategy , you send a rest api request along with the data to this tool and this tool will enqueue those data in the message queue and will immediately send the response back to you saying that the message data has been enqueued and that data will be processed later and the response will be available at the consumer end , there you can do whatever you want with the response.
 
@@ -154,7 +154,7 @@ To use this strategy properly , navigate to root folder of my project and then i
 
 ### 3. Publisher/Consumer Strategy -
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/ZGGqN42/Pub-Con.jpg" alt="Pub-Con" border="0"></a>
+<a href="#"><img src="https://i.ibb.co/ZGGqN42/Pub-Con.jpg" alt="Pub-Con" border="0"></a>
 
 In this strategy , the publisher will be integrated to your existing application , and that publisher will have the connection setup to the message queue which will be hosted in cloudAMQP, and this Mod-Guard tool will be hosted in any cloud hosting platforms (eg-heroku) and will act as only the consumer, which will dequeue the data that is being enqueued in the message queue and that data will be processed and the result of the moderation data will be available at the consumer end , just like the API+Publisher/Consumer strategy, you will write your own js code in the modGuardConsumer.js file to access the response of the moderation data, and do whatever you want with it.
 
