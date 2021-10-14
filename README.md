@@ -186,3 +186,13 @@ Please read through our [contributing guidelines](https://github.com/SwastikGowd
 - https://www.linkedin.com/in/swastik-gowda-l-06972a18a/
 - https://swastikgowdal.github.io/SwastikGowda-Portfolio/
 - https://twitter.com/swastikgowda
+
+## Acknowledgments 👍
+
+Thanks to these awesome services/tools and technologies!
+- [Sightengine](https://sightengine.com/)
+- [ipqualityscore.com](https://www.ipqualityscore.com/)
+- [RabbitMQ](https://rabbitmq.com/)
+- [Cloudamqp](https://customer.cloudamqp.com/)
+- [akismet](https://akismet.com/)
+- [bad-words NPM package](https://www.npmjs.com/package/bad-words)
