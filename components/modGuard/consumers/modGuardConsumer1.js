@@ -30,8 +30,8 @@ const moderationDataConsumer = async () => {
 
         //* checking whether the user provided image file
         if (
-          Object.hasOwn(moderationData, 'image_file') &&
-          !Object.hasOwn(moderationData, 'image_link')
+          Object.prototype.hasOwnProperty.call(moderationData, 'image_file') &&
+          !Object.prototype.hasOwnProperty.call(moderationData, 'image_link')
         ) {
           //* creating a jpg file and writing the image buffer to it
           const filename = `${uid()}.jpg`;
@@ -61,7 +61,7 @@ const moderationDataConsumer = async () => {
         } else {
           response = await modGuardServices(moderationData, undefined);
         }
-        if (Object.hasOwn(moderationData, 'metadata')) {
+        if (Object.prototype.hasOwnProperty.call(moderationData, 'metadata')) {
           response.metadata = moderationData.metadata;
         }
         console.log('consumer 1 response -');

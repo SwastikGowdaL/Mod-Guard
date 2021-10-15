@@ -13,7 +13,7 @@ const modGuard = async (req, res) => {
       } else {
         response = await modGuardServices(moderationData, undefined);
       }
-      if (Object.hasOwn(moderationData, 'metadata')) {
+      if (Object.prototype.hasOwnProperty.call(moderationData, 'metadata')) {
         response.metadata = req.body.metadata;
       }
       res.status(200).send(response);

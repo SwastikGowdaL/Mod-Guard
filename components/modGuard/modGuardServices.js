@@ -38,7 +38,7 @@ const modGuardServices = async (moderationData, imageBuffer) => {
 
   //* checks whether the link of the image was provided & whether selected other image_moderation details than nudity &
   //* sends it to sight engine api service along with the image_moderation details
-  if (Object.hasOwn(moderationData, 'image_link')) {
+  if (Object.prototype.hasOwnProperty.call(moderationData, 'image_link')) {
     response = await imageModeration.extensiveImageModeration(
       moderationData.image_link,
       moderationData.image_moderation
@@ -48,7 +48,7 @@ const modGuardServices = async (moderationData, imageBuffer) => {
   //*  checks whether the image link was provided and whether only the nudity was provided in image_moderation details
   //* if so then downloads the file from that link and then sends it to nsfwjs module for nsfw detection
   // if (
-  //   Object.hasOwn(moderationData, 'image_link') &&
+  //   Object.prototype.hasOwnProperty.call(moderationData, 'image_link') &&
   //   moderationData.image_moderation === 'nudity'
   // ) {
   //   const filename = `${uid()}.jpg`;
@@ -67,35 +67,37 @@ const modGuardServices = async (moderationData, imageBuffer) => {
   // }
 
   //* checking whether the user provided isProfane field
-  if (Object.hasOwn(moderationData, 'isProfane')) {
+  if (Object.prototype.hasOwnProperty.call(moderationData, 'isProfane')) {
     response.isProfane = await profanityDetection.isProfane(
       moderationData.isProfane
     );
   }
 
   //* checking whether the user provided text to filter profanity
-  if (Object.hasOwn(moderationData, 'filter_profanity')) {
+  if (
+    Object.prototype.hasOwnProperty.call(moderationData, 'filter_profanity')
+  ) {
     response.filtered_profanity = await profanityDetection.filterProfanity(
       moderationData.filter_profanity
     );
   }
 
   //* checking whether the user provided malicious link
-  if (Object.hasOwn(moderationData, 'isMalicious')) {
+  if (Object.prototype.hasOwnProperty.call(moderationData, 'isMalicious')) {
     response.isMalicious = await maliciousUrlDetection(
       moderationData.isMalicious
     );
   }
 
   //* checking whether the user provided content for spamDetection
-  if (Object.hasOwn(moderationData, 'isSpam')) {
+  if (Object.prototype.hasOwnProperty.call(moderationData, 'isSpam')) {
     response.isSpam = await spamDetection.spamContentDetection(
       moderationData.isSpam
     );
   }
 
   //* checking whether the user provided content for spamEmailDetection
-  if (Object.hasOwn(moderationData, 'isSpamEmail')) {
+  if (Object.prototype.hasOwnProperty.call(moderationData, 'isSpamEmail')) {
     response.isSpamEmail = await spamDetection.spamEmailDetection(
       moderationData.isSpamEmail
     );
