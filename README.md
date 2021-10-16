@@ -11,7 +11,7 @@
 ## Table of Contents
 
 - [Installing](#installing)
-- [Getting Started/Usage](#getting-started)
+- [Getting Started/Usage](#getting-started--usage)
   - [Api Strategy](#1-api-strategy)
   - [Api + Publisher/Consumer Strategy](#2-api--publisher--consumer-strategy)
   - [Publisher/Consumer Strategy](#3-publisherconsumer-strategy)
@@ -50,7 +50,7 @@ As i told you guys before I am using various free, open source and freemium serv
 
 - In the `.env` file specify the port you want to use -
 
-  <code> PORT=_your-desired-port_ </code>
+  ``` PORT=_your-desired-port_ ```
 
   > If not specified, it will use port 3001 by default
 
