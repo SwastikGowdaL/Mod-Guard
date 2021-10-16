@@ -39,6 +39,7 @@
 | Ability to provide metadata        |     ✓     |
 | Different communication strategies |     ✓     |
 |NSFW image detection without sightengine|✓|
+|Rate Limiter|✓|
 
 ## Installing
 
