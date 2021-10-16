@@ -10,8 +10,8 @@
 
 ## Table of Contents
 
+- [Advantages / Key-features of Mod-Guard](#advantages--key-features-of-mod-guard)
 - [Installing](#installing)
-- [Advantages / Key-features of Mod-Guard]()
 - [Getting Started/Usage](#getting-started--usage)
   - [Api Strategy](#1-api-strategy)
   - [Api + Publisher/Consumer Strategy](#2-api--publisher--consumer-strategy)
