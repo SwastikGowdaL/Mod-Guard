@@ -51,7 +51,7 @@ As i told you guys before I am using various free, open source and freemium serv
 - In the `.env` file specify the port you want to use -
 
   ``` 
-  PORT=*your-desired-port* 
+  PORT=__your-desired-port__ 
   ```
 
   > If not specified, it will use port 3001 by default
