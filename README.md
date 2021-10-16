@@ -2,7 +2,7 @@
 
 ## Mod-Guard
 
-**One-stop-shop** for all your **content moderation** - nsfw, weapons, alcohol, drugs, gore,offensive symbols imagery detection, & profanity/bad-words detection/filter & spam detection & spamEmail detection & malicious URL detection.
+**One-stop-shop** for all kinds of **content moderation** - nsfw, weapons, alcohol, drugs, gore,offensive symbols imagery detection, & profanity/bad-words detection/filter & spam detection & spamEmail detection & malicious URL detection.
 
 > This is language agnostic , that means it doesn't matter which programming languages you are using , since we have implemented different strategies/patterns to communicate with various application, you can integrate it easily with our application as well.
 
