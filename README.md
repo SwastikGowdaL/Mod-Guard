@@ -59,7 +59,7 @@ As i told you guys before I am using various free, open source and freemium serv
 - In the `.env` file specify the authentication key that you want to use and make sure that you provide that auth key in the header of each and every request from the client, provide the auth key like this in the `.env` -
 
   ```
-  AUTH*KEY=<your-auth-key>
+  AUTH_KEY=<your-auth-key>
   ```
 
   > This is integrated for security purposes, and I have also implemented rate limiter for basic protection against attacks like DDoS and brute force , we have used the [express-slow-down](https://www.npmjs.com/package/express-slow-down) module for this , which is based on the token bucket slow down algorithm, that means if more that 10 requests are sent in 1 min from the same IP address, then our rate limiter is gonna make the subsequent request wait for 500 ms and this is implemented only on API strategy api endpoint and no rate limiter imposed on API + publisher/consumer strategy api endpoint. You can change the 10 request limit in the rateLimiter.js file in the middleware folder of this project.
@@ -97,7 +97,7 @@ As i told you guys before I am using various free, open source and freemium serv
 - For publisher/consumer strategy and API+publisher/consumer strategy, I am using the RabbitMQ message broker , and that message broker is should be hosted and maintained by a cloud provider called CloudAMQP , go to their [website](https://customer.cloudamqp.com/login) create an account and choose their free tier and create an instance , for more details on creating an instance go through this [video](https://youtu.be/e03c3CIGtYU?t=5303) , once you create an instance, you will get the link to that cloud instance/server , specify it in the `.env` file like this -
 
   ```
-  RABBITMQ*SERVER=<your-rabbiMQ-instance-link>
+  RABBITMQ_SERVER=<your-rabbiMQ-instance-link>
   ```
 
   > This is not necessary if you are going to use only the API strategy, since it doesn't require a message broker.
