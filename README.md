@@ -11,6 +11,7 @@
 ## Table of Contents
 
 - [Installing](#installing)
+- [Advantages / Key-features of Mod-Guard]()
 - [Getting Started/Usage](#getting-started--usage)
   - [Api Strategy](#1-api-strategy)
   - [Api + Publisher/Consumer Strategy](#2-api--publisher--consumer-strategy)
@@ -19,6 +20,24 @@
 - [Creator](#creator)
 - [Acknowledgments](#acknowledgments-)
 - [Copyright-and-License](#copyright-and-license)
+
+## Advantages / Key-features of Mod-Guard
+
+| Features                           | Mod-Guard |
+| :--------------------------------- | :-------: |
+| NSFW image detection               |     ✓     |
+| Alcohol image detection            |     ✓     |
+| Weapons image detection            |     ✓     |
+| Drugs image detection              |     ✓     |
+| Gore image detection               |     ✓     |
+| Offensive symbol image detection   |     ✓     |
+| Malicious URL detection            |     ✓     |
+| Profanity text detection           |     ✓     |
+| Filter Profanity text              |     ✓     |
+| Spam text detection                |     ✓     |
+| Spam Email detection               |     ✓     |
+| Ability to provide metadata        |     ✓     |
+| Different communication strategies |     ✓     |
 
 ## Installing
 
@@ -50,8 +69,8 @@ As i told you guys before I am using various free, open source and freemium serv
 
 - In the `.env` file specify the port you want to use -
 
-  ``` 
-  PORT=<your-desired-port> 
+  ```
+  PORT=<your-desired-port>
   ```
 
   > If not specified, it will use port 3001 by default
@@ -67,11 +86,13 @@ As i told you guys before I am using various free, open source and freemium serv
 - For any imagery detection, I am using [sightengine](https://sightengine.com/) api service , go to their website & [sign up](https://dashboard.sightengine.com/signup) to their free service , then they will provide you with an [api user key](https://dashboard.sightengine.com/api-credentials) and [api secret key](https://dashboard.sightengine.com/api-credentials) , specify those keys in the `.env` file like this -
 
   ```
-  SIGHT_ENGINE_API_USER=<your-api-user-key> 
+  SIGHT_ENGINE_API_USER=<your-api-user-key>
   ```
+
   ```
-  SIGHT_ENGINE_API_SECRET=<your-api-secret> 
+  SIGHT_ENGINE_API_SECRET=<your-api-secret>
   ```
+
   ```
   BLOG=<your-blog-website-url>
   ```
