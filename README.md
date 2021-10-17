@@ -38,7 +38,7 @@
 | Spam Email detection               |     ✓     |
 | Ability to provide metadata        |     ✓     |
 | Different communication strategies |     ✓     |
-|NSFW image detection without sightengine|✓|
+|NSFW.js for nudity detection saves Sightengine api points|✓|
 |Rate Limiter|✓|
 
 ## Installing
