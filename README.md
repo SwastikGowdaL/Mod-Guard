@@ -17,6 +17,7 @@
   - [Api + Publisher/Consumer Strategy](#2-api--publisher--consumer-strategy)
   - [Publisher/Consumer Strategy](#3-publisherconsumer-strategy)
 - [Examples](#examples)
+- [Help Getting Started](#examples)
 - [Contributing](#contributing)
 - [Creator](#creator)
 - [Acknowledgments](#acknowledgments-)
@@ -241,6 +242,9 @@ Here instead of performing API request, you just pass the moderation data which 
    ![Api strategy + Publisher/Consumer strategy-eg-1](https://user-images.githubusercontent.com/68393994/137683410-e5000bec-e466-4c7f-b388-a23d4bb11aca.png)
    - Example 2 -
    ![Api strategy + Publisher/Consumer strategy-eg-2](https://user-images.githubusercontent.com/68393994/137683439-0c31954b-68bd-4d19-8a33-04509a043003.png)  
+
+## Help Getting Started 
+If you need any help getting started with Mod-Guard, you can contact me on [Instagram-SwastikGowda](https://www.instagram.com/coder_rna/) or on [LinkedIn-SwastikGowda](https://www.linkedin.com/in/swastik-gowda-l-06972a18a/) or email me at swastik7999@gmail.com
 
 ## Contributing
 
