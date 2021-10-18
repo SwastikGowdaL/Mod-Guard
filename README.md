@@ -21,7 +21,7 @@
   - [Api Strategy](#1-api-strategy)
   - [Api + Publisher/Consumer Strategy](#2-api--publisher--consumer-strategy)
   - [Publisher/Consumer Strategy](#3-publisherconsumer-strategy)
-- [Self-Hosting video](#examples)
+- [Self-Hosting video](#self-hosting-video)
 - [Examples](#examples)
 - [Help Getting Started](#help-getting-started)
 - [Contributing](#contributing)
