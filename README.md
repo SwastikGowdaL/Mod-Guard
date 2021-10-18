@@ -56,7 +56,7 @@
 > **Prerequisites** : Node.js, npm and git bash installed in your computer/laptop.
 > If the Prerequisites are met you can run this application locally as well! 
 
->If you prefer the video, then watch this - [video]() 
+>If you prefer the video, then watch this - [video](https://www.instagram.com/tv/CVLdMIoMsB1/) 
 
 **Step 1:**
 `Fork` and then `clone` the forked repo!
