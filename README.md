@@ -47,6 +47,7 @@
 > **Note** : You have to self host this application , explanation for self hosting is provided below as well.
 
 > **Prerequisites** : Node.js, npm and git bash installed in your computer/laptop.
+> If the Prerequisites are met you can run this application locally as well! 
 
 **Step 1:**
 `Fork` and then `clone` the forked repo!
