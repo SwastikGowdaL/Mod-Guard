@@ -1,6 +1,9 @@
 ![Component 6](https://user-images.githubusercontent.com/68393994/136546938-9b152192-42b2-4197-af96-aaf2bc9198b1.png)
-<a href="https://github.com/SwastikGowdaL/Mod-Guard/issues"><img alt="Mod-Guard" src="https://img.shields.io/github/issues/SwastikGowdaL/Mod-Guard"></a> 
+[![GitHub license](https://img.shields.io/github/license/SwastikGowdaL/Mod-Guard)](https://github.com/SwastikGowdaL/Mod-Guard/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/SwastikGowdaL/Mod-Guard)](https://github.com/SwastikGowdaL/Mod-Guard/issues)
 [![GitHub forks](https://img.shields.io/github/forks/SwastikGowdaL/Mod-Guard)](https://github.com/SwastikGowdaL/Mod-Guard/network)
+[![GitHub stars](https://img.shields.io/github/stars/SwastikGowdaL/Mod-Guard)](https://github.com/SwastikGowdaL/Mod-Guard/stargazers)
+[![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https://twitter.com/swastikgowda)
 
 ## Mod-Guard
 
