@@ -238,6 +238,10 @@ Here instead of performing API request, you just pass the moderation data which 
 2. This strategy is Highly recommended since there is not a lot of latency involved.
 3. This strategy and the 2nd strategy are reliable due to persistent message queue, hence there will be no data loss.
 
+## Self-Hosting video 
+
+<a href="#"><img src="https://i.ibb.co/gPw76Fk/Instagram-post-138.jpg" alt="Instagram-post-138" border="0"></a>
+
 ## Examples
 **1. Api strategy :**
    - Example 1 -
