@@ -208,7 +208,7 @@ To use this strategy properly , navigate to root folder of my project and then i
 **Pros/Cons of using API + Publisher/Consumer strategy -**
 
 1. This strategy can be used by only those who know to work with js/node js, since you will have to write your javascript code to access the response of moderation data and do what ever you want with it.
-2. You can also write few lines of js to send the response of moderation data from consumer back to your server, and the server might be written in different prgramming language.
+2. You can also write few lines of js to send the response of moderation data from consumer back to your server, and your server might be written in different prgramming language.
 3. Since the data is enqueued in the message queue and that message queue is made persistent, there is no data loss, hence reliable!
 4. Programmer doesn't have to learn about the message broker.
 
