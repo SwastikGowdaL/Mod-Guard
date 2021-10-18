@@ -21,6 +21,7 @@
   - [Api Strategy](#1-api-strategy)
   - [Api + Publisher/Consumer Strategy](#2-api--publisher--consumer-strategy)
   - [Publisher/Consumer Strategy](#3-publisherconsumer-strategy)
+- [Self-Hosting video](#examples)
 - [Examples](#examples)
 - [Help Getting Started](#help-getting-started)
 - [Contributing](#contributing)
@@ -54,6 +55,8 @@
 
 > **Prerequisites** : Node.js, npm and git bash installed in your computer/laptop.
 > If the Prerequisites are met you can run this application locally as well! 
+
+>If you prefer the video, then watch this - [video]() 
 
 **Step 1:**
 `Fork` and then `clone` the forked repo!
