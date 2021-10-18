@@ -3,7 +3,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/SwastikGowdaL/Mod-Guard)](https://github.com/SwastikGowdaL/Mod-Guard/issues)
 [![GitHub forks](https://img.shields.io/github/forks/SwastikGowdaL/Mod-Guard)](https://github.com/SwastikGowdaL/Mod-Guard/network)
 [![GitHub stars](https://img.shields.io/github/stars/SwastikGowdaL/Mod-Guard)](https://github.com/SwastikGowdaL/Mod-Guard/stargazers)
-[![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/swastikgowda)
+[![Twitter](https://img.shields.io/twitter/style=social)](https://twitter.com/swastikgowda)
 
 ## Mod-Guard
 
