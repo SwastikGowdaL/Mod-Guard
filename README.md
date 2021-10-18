@@ -240,7 +240,7 @@ Here instead of performing API request, you just pass the moderation data which 
 
 ## Self-Hosting video 
 
-<a href="#"><img src="https://i.ibb.co/gPw76Fk/Instagram-post-138.jpg" alt="Instagram-post-138" border="0"></a>
+<a href="#"><img src="https://i.ibb.co/Lhdbkqf/Instagram-post-138.jpg" alt="Instagram-post-138" border="0"></a>
 
 ## Examples
 **1. Api strategy :**
