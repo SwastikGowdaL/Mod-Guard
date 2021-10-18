@@ -230,15 +230,15 @@ Here instead of performing API request, you just pass the moderation data which 
 
 ## Examples
 **1. Api strategy :**
-   **- Example 1 -**
+   - Example 1 -
    ![API-strategy-eg-1](https://user-images.githubusercontent.com/68393994/137683120-705746f5-47e6-44a0-9360-42e61ff45a6a.png)
-   **- Example 2 -**
+   - Example 2 -
    ![API-strategy-eg-2](https://user-images.githubusercontent.com/68393994/137683148-e4e68d17-3498-4bbb-b580-bba3ebb7310d.png)
    
 **2. Api strategy + Publisher/Consumer strategy:**
-   **- Example 1 -**
+   - Example 1 -
    ![Api strategy + Publisher/Consumer strategy-eg-1](https://user-images.githubusercontent.com/68393994/137683410-e5000bec-e466-4c7f-b388-a23d4bb11aca.png)
-   **- Example 2 -**
+   - Example 2 -
    ![Api strategy + Publisher/Consumer strategy-eg-2](https://user-images.githubusercontent.com/68393994/137683439-0c31954b-68bd-4d19-8a33-04509a043003.png)  
 
 ## Contributing
