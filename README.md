@@ -1,5 +1,6 @@
 ![Component 6](https://user-images.githubusercontent.com/68393994/136546938-9b152192-42b2-4197-af96-aaf2bc9198b1.png)
-<a href="https://github.com/SwastikGowdaL/Mod-Guard/issues"><img alt="Mod-Guard" src="https://img.shields.io/github/issues/SwastikGowdaL/Mod-Guard"></a>
+<a href="https://github.com/SwastikGowdaL/Mod-Guard/issues"><img alt="Mod-Guard" src="https://img.shields.io/github/issues/SwastikGowdaL/Mod-Guard"></a> 
+[![GitHub forks](https://img.shields.io/github/forks/SwastikGowdaL/Mod-Guard)](https://github.com/SwastikGowdaL/Mod-Guard/network)
 
 ## Mod-Guard
 
