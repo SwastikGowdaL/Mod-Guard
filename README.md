@@ -180,7 +180,7 @@ Using this strategy is just like communicating with any other Rest api's out the
 **Pros/Cons of using API strategy -**
 
 1. It is quite simple to use.
-2. If you are sending a lot of data for moderation or if the image is large, then it can take a lot time to send the response back so there is latency involved and for tackling that I have implemented the other 2 strategies.
+2. If you are sending a lot of data for moderation or if the image is large, then the Mod-Guard server can take quite a lot of time to send the response back to client, so there is latency involved and for tackling this problem I have implemented the other 2 strategies.
 
 ### 2. Api + Publisher / Consumer Strategy
 
