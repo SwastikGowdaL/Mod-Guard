@@ -17,7 +17,7 @@
   - [Api + Publisher/Consumer Strategy](#2-api--publisher--consumer-strategy)
   - [Publisher/Consumer Strategy](#3-publisherconsumer-strategy)
 - [Examples](#examples)
-- [Help Getting Started](#examples)
+- [Help Getting Started](#help-getting-started)
 - [Contributing](#contributing)
 - [Creator](#creator)
 - [Acknowledgments](#acknowledgments-)
