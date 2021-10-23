@@ -1,0 +1,6 @@
+version: "3"
+services:
+  93ef10adebc3:
+    image: swastik/mod-guard:2
+    ports:
+      - 3000:3000
