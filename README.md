@@ -21,7 +21,7 @@
   - [Api Strategy](#1-api-strategy)
   - [Api + Publisher/Consumer Strategy](#2-api--publisher--consumer-strategy)
   - [Publisher/Consumer Strategy](#3-publisherconsumer-strategy)
-- [Self-Hosting video](#examples)
+- [Self-Hosting video](#self-hosting-video)
 - [Examples](#examples)
 - [Help Getting Started](#help-getting-started)
 - [Contributing](#contributing)
@@ -56,7 +56,7 @@
 > **Prerequisites** : Node.js, npm and git bash installed in your computer/laptop.
 > If the Prerequisites are met you can run this application locally as well! 
 
->If you prefer the video, then watch this - [video]() 
+>If you prefer the video, then watch this - [video](https://www.instagram.com/tv/CVLdMIoMsB1/) 
 
 **Step 1:**
 `Fork` and then `clone` the forked repo!
@@ -237,6 +237,10 @@ Here instead of performing API request, you just pass the moderation data which 
 1. Need to know about message brokers and just the basics of RabbitMQ.
 2. This strategy is Highly recommended since there is not a lot of latency involved.
 3. This strategy and the 2nd strategy are reliable due to persistent message queue, hence there will be no data loss.
+
+## Self-Hosting video 
+
+<a href="https://www.instagram.com/tv/CVLeVutrooU/"><img src="https://i.ibb.co/Lhdbkqf/Instagram-post-138.jpg" alt="Instagram-post-138" border="0"></a>
 
 ## Examples
 **1. Api strategy :**
