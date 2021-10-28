@@ -261,6 +261,7 @@ If you need any help getting started with Mod-Guard, you can contact me on [Inst
 ## Docker Image
 
 Below in the command to pull the docker Image, its hosted on [Docker hub](https://hub.docker.com/r/swastikgowda/mod-guard).
+
 <code> docker pull swastikgowda/mod-guard </code>
 
 > **NOTE** : If you are using docker, don't forget to pass the env variables in docker compose file available in this repo!
