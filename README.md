@@ -258,6 +258,13 @@ Here instead of performing API request, you just pass the moderation data which 
 ## Help Getting Started 
 If you need any help getting started with Mod-Guard, you can contact me on [Instagram-SwastikGowda](https://www.instagram.com/coder_rna/) or on [LinkedIn-SwastikGowda](https://www.linkedin.com/in/swastik-gowda-l-06972a18a/) or email me at swastik7999@gmail.com
 
+## Docker Image
+
+Below in the command to pull the docker Image, its hosted on [Docker hub](https://hub.docker.com/r/swastikgowda/mod-guard).
+<code> docker pull swastikgowda/mod-guard </code>
+
+> **NOTE** : If you are using docker, don't forget to pass the env variables in docker compose file available in this repo!
+
 ## Contributing
 
 Please read through our [contributing guidelines](https://github.com/SwastikGowdaL/Mod-Guard/blob/main/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
