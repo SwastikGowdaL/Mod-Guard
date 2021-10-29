@@ -24,6 +24,7 @@
 - [Self-Hosting video](#self-hosting-video)
 - [Examples](#examples)
 - [Help Getting Started](#help-getting-started)
+- [Docker Image](#docker-image)
 - [Contributing](#contributing)
 - [Creator](#creator)
 - [Acknowledgments](#acknowledgments-)
